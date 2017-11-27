@@ -1,0 +1,16 @@
+<ul>
+<li><a class="active" >Roulette</a></li>
+</ul>
+
+<div style="margin-left: 20%; margin-top: 10%">
+  <div class="form-inline" >
+      <div class="form-group mx-sm-3">
+        <input type="text" class="form-control" [(ngModel)]="emailid" style="width: 280px" #inputId placeholder="EmailId">
+      </div>
+    {{str}}
+      <div class="form-group" >
+        <small *ngIf="check" class="form-text " style="color: white; margin-bottom: 2px;margin-right: 10px">Invalid Credentials</small>
+        <button type="submit"class="btn btn-success" (click)="isRegistered(emailid)"  >Confirm identity</button>
+      </div>
+  </div>
+</div>

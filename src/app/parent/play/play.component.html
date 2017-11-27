@@ -1,0 +1,36 @@
+<!--<div class="par">-->
+  <!--<div class="lef abc"><h1>Roulette</h1></div>-->
+  <!--<div class="rig abc"><label>{{user2.Balance}}</label><label></label></div>-->
+  <!--<div class="rig abc"><button (click)="logout()">Logout</button></div>-->
+<!--&lt;!&ndash;<label >{{user['user'].Name}}</label>&ndash;&gt;-->
+<!--</div>-->
+<ul>
+  <li><a href="#home"><h1>Roulette</h1></a></li>
+  <!--<li><a href="#news">News</a></li>-->
+  <!--<li><a href="#contact">Contact</a></li>-->
+  <li style="float:right"><button (click)="logout()" id="but">Logout</button></li>
+  <li style="float:right"><p class="" >
+    {{user2.Name}} ,you have</p><p> Rs {{user2.Balance}} in your account</p></li>
+</ul>
+
+
+<img id="imag" src="http://www.roulette.co.uk/wp-content/uploads/european-roulette.jpeg" height="350px" width="700px">
+<table>
+  <tr><td><label>1st 12</label></td><td><input type="number" (change)="onChangeing(0)" [(ngModel)]="arr[0]" step=500 min=0></td>
+<td><label>2nd 12</label></td><td><input type="number" (change)="onChangeing(1)" [(ngModel)]="arr[1]" step=500 min=0></td>
+<td><label>3rd 12</label></td><td><input type="number" (change)="onChangeing(2)" [(ngModel)]="arr[2]" step=500 min=0></td>
+</tr>
+
+
+  <tr>
+<td><label>0</label></td><td><input type="number" (change)="onChangeing(3)" [(ngModel)]="arr[3]" step=500 min=0>
+    <td><label>1 to 18</label></td><td><input type="number" (change)="onChangeing(4)" [(ngModel)]="arr[4]" step=500 min=0></td>
+    <td><label>19 to 36</label></td><td><input type="number" (change)="onChangeing(5)" [(ngModel)]="arr[5]" step=500 min=0></td>
+  </tr>
+
+
+<tr><td><label>Even</label></td><td><input type="number" (change)="onChangeing(6)" [(ngModel)]="arr[6]" step=500 min=0></td>
+<td><label>Odd</label></td><td><input type="number" (change)="onChangeing(7)" [(ngModel)]="arr[7]" step=500 min=0></td>
+  <td><button (click)="betSubmit()">submit</button></td>
+
+</table>

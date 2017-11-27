@@ -1,0 +1,56 @@
+.boxe{
+  display: inline;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+td {
+  padding: 5px;
+  text-align: left;
+}
+table {
+  width:100%;
+  /*background-color: ;*/
+}
+table, th, td {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+  height: 75px;
+   background-color: green;
+ }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+#but{
+  margin-right: 5px;
+  margin-top: 10px;
+}
+#imag{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
